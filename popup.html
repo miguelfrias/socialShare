@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+  <title>Social Share</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!--
+    - JavaScript and HTML must be in separate files: see our Content Security
+    - Policy documentation[1] for details and explanation.
+    -
+    - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+   -->
+</head>
+<body>
+
+  <div id="btn-container">
+    <button class="btn share facebook" src="img/png/facebook4.png" alt="Share on Facebook"></button>
+    <button class="btn share twitter" src="img/png/twitter2.png" alt="Share on Twitter"></button>
+    <button class="btn share google" src="img/png/google2.png" alt="Share on Google"></button>
+    <button class="btn share linkedin" src="img/png/linkedin2.png" alt="Share on LinkedIn"></button>
+  </div>
+
+  <script src="popup.js"></script>
+
+</body>
+</html>
+
